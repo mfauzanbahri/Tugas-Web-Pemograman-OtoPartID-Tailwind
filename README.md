@@ -21,7 +21,12 @@ Buka `index.html` di browser. Tailwind dimuat lewat CDN (Play CDN) untuk keperlu
 Tampilan OtoPartID (kartu harga, badge status Termurah, tabel perbandingan marketplace) cenderung spesifik, dan Tailwind memberi kendali penuh lewat utility class tanpa perlu menimpa gaya bawaan seperti di framework berbasis komponen. Utility `grid`, `flex`, dan prefix responsif (`md:`, `lg:`) membuat layout dashboard mudah disesuaikan per ukuran layar. Cocok bila proyek akhir memakai stack berbasis komponen seperti React, karena gaya ditulis langsung di markup.
 
 ## Screenshot
-Simpan di `docs/screenshots/`.
+<img width="1454" height="726" alt="image" src="https://github.com/user-attachments/assets/ea802f35-0233-43ec-ba07-8e7a1e62e660" />
+<img width="1475" height="763" alt="image" src="https://github.com/user-attachments/assets/e4162371-bc70-43af-a184-cc4a68513ec0" />
+<img width="1475" height="805" alt="image" src="https://github.com/user-attachments/assets/3750c325-b92f-4dbc-b7ed-8efbf817e1ea" />
+<img width="1481" height="785" alt="image" src="https://github.com/user-attachments/assets/121ed376-e99e-4344-90dd-3dfb9a4e607d" />
+
+
 
 | Halaman | Desktop | Mobile |
 |---|---|---|
