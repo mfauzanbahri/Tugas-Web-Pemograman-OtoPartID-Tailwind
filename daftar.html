@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Sparepart - OtoPartID</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-100 text-slate-800">
+  <header class="bg-slate-900 sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-14">
+        <a href="index.html" class="text-lg font-bold text-white">Oto<span class="text-amber-400">PartID</span></a>
+        <button id="menuBtn" type="button" class="md:hidden text-white p-2" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <nav class="hidden md:flex gap-1"><a href="index.html" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-200 hover:bg-slate-700">Dashboard</a><a href="daftar.html" class="block px-3 py-2 rounded-md text-sm font-medium bg-amber-500 text-slate-900">Daftar Sparepart</a><a href="form.html" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-200 hover:bg-slate-700">Tambah Data</a></nav>
+      </div>
+      <nav id="menu" class="hidden md:hidden pb-3 space-y-1"><a href="index.html" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-200 hover:bg-slate-700">Dashboard</a><a href="daftar.html" class="block px-3 py-2 rounded-md text-sm font-medium bg-amber-500 text-slate-900">Daftar Sparepart</a><a href="form.html" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-200 hover:bg-slate-700">Tambah Data</a></nav>
+    </div>
+  </header>
+  <main class="max-w-6xl w-full mx-auto px-4 py-6 flex-grow">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+      <div>
+        <h1 class="text-2xl font-bold">Daftar Sparepart</h1>
+        <p class="text-slate-500">Komponen kendaraan yang tersedia di sistem.</p>
+      </div>
+      <a href="form.html" class="rounded-md bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-4 py-2 text-center">Tambah sparepart</a>
+    </div>
+    <div class="bg-white rounded-lg shadow overflow-hidden">
+      <div class="p-4 border-b"><input type="search" placeholder="Cari nama atau kode OEM" aria-label="Cari sparepart" class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400"></div>
+<div class="overflow-x-auto"><table class="min-w-full text-sm">
+  <thead class="bg-slate-900 text-white"><tr><th class="px-4 py-3 text-left font-semibold">Kode OEM</th><th class="px-4 py-3 text-left font-semibold">Nama Komponen</th><th class="px-4 py-3 text-left font-semibold">Kategori</th><th class="px-4 py-3 text-left font-semibold">Harga Termurah</th><th class="px-4 py-3 text-left font-semibold">Aksi</th></tr></thead>
+  <tbody class="divide-y divide-gray-200">
+<tr class="odd:bg-white even:bg-gray-50 hover:bg-amber-50"><td class="px-4 py-3 whitespace-nowrap">06455-KVB-T01</td><td class="px-4 py-3">Kampas Rem Depan Honda Vario</td><td class="px-4 py-3"><span class="inline-block rounded-full bg-slate-200 px-2.5 py-0.5 text-xs">Sistem Pengereman</span></td><td class="px-4 py-3 whitespace-nowrap">Rp 45.000</td><td class="px-4 py-3"><a href="detail.html" class="text-blue-700 font-medium hover:underline">Lihat Detail</a></td></tr>
+<tr class="odd:bg-white even:bg-gray-50 hover:bg-amber-50"><td class="px-4 py-3 whitespace-nowrap">15601-BZ010</td><td class="px-4 py-3">Filter Oli Toyota Avanza</td><td class="px-4 py-3"><span class="inline-block rounded-full bg-slate-200 px-2.5 py-0.5 text-xs">Filter & Udara</span></td><td class="px-4 py-3 whitespace-nowrap">Rp 28.500</td><td class="px-4 py-3"><a href="detail.html" class="text-blue-700 font-medium hover:underline">Lihat Detail</a></td></tr>
+<tr class="odd:bg-white even:bg-gray-50 hover:bg-amber-50"><td class="px-4 py-3 whitespace-nowrap">08798-9027</td><td class="px-4 py-3">Oli Mesin Yamaha Yamalube 0.8L</td><td class="px-4 py-3"><span class="inline-block rounded-full bg-slate-200 px-2.5 py-0.5 text-xs">Oli & Pelumas</span></td><td class="px-4 py-3 whitespace-nowrap">Rp 49.000</td><td class="px-4 py-3"><a href="detail.html" class="text-blue-700 font-medium hover:underline">Lihat Detail</a></td></tr>
+<tr class="odd:bg-white even:bg-gray-50 hover:bg-amber-50"><td class="px-4 py-3 whitespace-nowrap">CR8E</td><td class="px-4 py-3">Busi NGK CR8E Motor 4-Tak</td><td class="px-4 py-3"><span class="inline-block rounded-full bg-slate-200 px-2.5 py-0.5 text-xs">Kelistrikan & Busi</span></td><td class="px-4 py-3 whitespace-nowrap">Rp 32.000</td><td class="px-4 py-3"><a href="detail.html" class="text-blue-700 font-medium hover:underline">Lihat Detail</a></td></tr>
+<tr class="odd:bg-white even:bg-gray-50 hover:bg-amber-50"><td class="px-4 py-3 whitespace-nowrap">17220-RBJ-000</td><td class="px-4 py-3">Filter Udara Honda Jazz GE8</td><td class="px-4 py-3"><span class="inline-block rounded-full bg-slate-200 px-2.5 py-0.5 text-xs">Filter & Udara</span></td><td class="px-4 py-3 whitespace-nowrap">Rp 85.000</td><td class="px-4 py-3"><a href="detail.html" class="text-blue-700 font-medium hover:underline">Lihat Detail</a></td></tr>
+<tr class="odd:bg-white even:bg-gray-50 hover:bg-amber-50"><td class="px-4 py-3 whitespace-nowrap">04465-0K090</td><td class="px-4 py-3">Kampas Rem Depan Toyota Innova</td><td class="px-4 py-3"><span class="inline-block rounded-full bg-slate-200 px-2.5 py-0.5 text-xs">Sistem Pengereman</span></td><td class="px-4 py-3 whitespace-nowrap">Rp 210.000</td><td class="px-4 py-3"><a href="detail.html" class="text-blue-700 font-medium hover:underline">Lihat Detail</a></td></tr>
+  </tbody></table></div>
+    </div>
+  </main>
+  <footer class="bg-slate-900 text-slate-300 text-center text-sm py-4 px-4">&copy; 2026 OtoPartID - Tugas Pemrograman Web - Muhammad Fauzan Bahri</footer>
+  <script>
+    const btn=document.getElementById('menuBtn'),menu=document.getElementById('menu');
+    btn.addEventListener('click',()=>{const open=menu.classList.toggle('hidden')===false;btn.setAttribute('aria-expanded',open);});
+  </script>
+</body>
+</html>
